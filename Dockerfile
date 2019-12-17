@@ -9,7 +9,7 @@ ENV TERRAFORM_DIR="/opt/terraform"
 
 # --- Install Terraform ---
 WORKDIR ${TMP_DIR}
-RUN wget -O terraform.zip https://releases.hashicorp.com/terraform/0.12.17/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+RUN wget -O terraform.zip https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 RUN unzip terraform.zip
 RUN mkdir ${TERRAFORM_DIR}
 RUN mv terraform ${TERRAFORM_DIR}/.
