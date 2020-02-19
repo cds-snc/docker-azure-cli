@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/azure-cli:2.0.77
 
 # --- Arguments ---
-ARG TERRAFORM_VERSION="0.12.19"
+ARG TERRAFORM_VERSION="0.12.21"
 
 # --- Re-usable environment variables ---
 ENV TMP_DIR="/tmp"
